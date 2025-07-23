@@ -13,44 +13,36 @@ const satoshi = localFont({
 const HeroSection = () => {
     return (
         <section className={satoshi.className}>
-            <div className="grid grid-cols-1 sm:grid-cols-12">
-                <div className="col-span-8 place-self-center text-left">
-                    <h1 className="pb-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-300 via-purple-300 to-pink-500">
-                        Hi, I'm Joyce Jeoung!
-                    </h1>
-                    <br></br>
-                    <span className="text-white text-base sm:text-lg lg:text-xl">
-                        <TypeAnimation
-                            sequence={[
-                                "A little bit about me, I am an upcoming senior studying Computer Science, Linguistics, and Cognitive Science at UCLA.",
-                                1000,
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            repeat={Infinity}
-                        />
-                    </span>
-                    <div className="pt-4">
-                        <button className="px-6 py-3 w-full sm:w-fit font-bold rounded-full mt-4 mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-400 text-white">Hire Me</button>
-                        <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full mt-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-400 text-white border border-white">
-                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download Resume</span>
-                        </button>
-                    </div>
+            <div className="max-w-4xl mx-auto mt-5 flex flex-col items-center text-center">
+                <div className="relative w-40 h-40 md:w-50 md:h-50 rounded-full overflow-hidden border-2 border-primary/10 border-black">
+                    <Image
+                        src="/images/hero-image.png"
+                        alt="Joyce Jeoung"
+                        decoding="async"
+                        fetchpriority="high"
+                        data-nimg="fill"
+                        className="absolute h-[100%] w-[100%] left-1/2 top-1/2 right-0 bottom-0 -translate-x-1/2 -translate-y-1/2"
+                        width={200}
+                        height={200}
+                    />
                 </div>
-                <div className="col-span-1">
-                    <br></br>
-                </div>
-                <div className="col-span-3 place-self-center mt-15 lg:mt-0">
-                    <div className="rounded-4xl bg-[#181818] w-[500px] h-[300px] sm:w-[250px] lg:w-[300px] relative">
-                        <Image
-                            src="/images/hero-image.png"
-                            alt="hero image"
-                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            width={200}
-                            height={200}
-                        />
-                    </div>
-                </div>
+            </div>
+            <div className="text-center">
+                <h1 className="pt-5 grid grid-cols-1 place-self-center pb-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold bg-clip-text bg-gradient-to-br text-black">
+                    Hi, I'm Joyce Jeoung
+                </h1>
+                <br></br>
+                <span className="text-black font-medium text-base sm:text-lg lg:text-xl">
+                    <TypeAnimation
+                        sequence={[
+                            "A little bit about me, I am an upcoming senior studying Computer Science, Linguistics, and Cognitive Science at UCLA.",
+                            1000,
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        repeat={Infinity}
+                    />
+                </span>
             </div>
         </section>
     );

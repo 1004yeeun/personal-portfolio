@@ -19,7 +19,6 @@ const HeroSection = () => {
                         src="/images/hero-image.png"
                         alt="Joyce Jeoung"
                         decoding="async"
-                        fetchpriority="high"
                         data-nimg="fill"
                         className="absolute h-[100%] w-[100%] left-1/2 top-1/2 right-0 bottom-0 -translate-x-1/2 -translate-y-1/2"
                         width={200}
@@ -35,7 +34,7 @@ const HeroSection = () => {
                 <span className="text-black font-medium text-base sm:text-lg lg:text-xl">
                     <TypeAnimation
                         sequence={[
-                            "A little bit about me, I am an upcoming senior studying Computer Science, Linguistics, and Cognitive Science at UCLA.",
+                            "I am an upcoming senior studying Computer Science, Linguistics, and Cognitive Science at UCLA. Go Bruins!",
                             1000,
                         ]}
                         wrapper="span"

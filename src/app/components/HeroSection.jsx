@@ -44,12 +44,12 @@ const HeroSection = () => {
                 </span>
             </div>
             <div className="pt-4 text-center">
-                <button className="px-6 py-3 w-full sm:w-fit font-bold rounded-full mt-4 mr-4 bg-gradient-to-br from-gray-400 via-black to-gray-400 hover:bg-none hover:bg-gray-200 text-white hover:text-black">View My Projects
+                <button className="px-6 py-3 w-full sm:w-fit font-bold rounded-full mt-4 mr-4 bg-gradient-to-br from-gray-400 via-black to-gray-400 hover:bg-gradient-to-br hover:from-gray-100 hover:via-gray-300 hover:to-gray-200 text-white hover:text-black">View My Projects
                     <span className="block hover:text-black text-white rounded-full"></span>
                 </button>
 
                 <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full mt-4 bg-gradient-to-br from-gray-400 via-black to-gray-400 text-black border border-white">
-                    <span className="block bg-white rounded-full px-5 py-2 hover:px-5 hover:py-2 hover:bg-gray-200">Contact Me!</span>
+                    <span className="block bg-white rounded-full px-5 py-2 hover:bg-gradient-to-br hover:from-gray-100 hover:via-gray-300 hover:to-gray-200">Contact Me!</span>
                 </button>
             </div>
         </section>

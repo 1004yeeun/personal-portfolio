@@ -9,7 +9,7 @@ export default function Home() {
     <MyHead title="Joyce Jeoung Portfolio Home" description="Hi! Learn more about Joyce Jeoung." />
     <main className="flex min-h-screen flex-col bg-[#DCD7D3]">
       <NavBar/>
-      <div className="container mx-auto px-7 py-20 py-25 sm:py-20">
+      <div className="container mx-auto px-7 py-25 sm:py-20">
         <HeroSection />
       </div>
     </main>

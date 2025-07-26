@@ -40,15 +40,15 @@ const NavBar = () => {
         <main className={satoshi.className}>
             <nav className="fixed top-0 left-0 right-0 z-10 bg-[#E6E1DD]/98">
                 <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-4 sm:py-2" >
-                    <Link onClick={playClick} href={"/"} className="text-xl text-black font-semibold font-sans hover:text-[#4A3A3A]">JOYCE JEOUNG</Link>
+                    <Link onClick={playClick} href={"/"} className="text-xl text-black font-semibold font-sans hover:text-[#716767]">JOYCE JEOUNG</Link>
                     <div className="mobile-menu block md:hidden">
                         {
                             !navbarOpen ? (
-                                <button onClick={() => {setNavBarOpen(true); playClick();}} className="flex items-center px-3 py-2 text-black hover:text-[#4A3A3A]">
+                                <button onClick={() => {setNavBarOpen(true); playClick();}} className="flex items-center px-3 py-2 text-black hover:text-[#716767]">
                                     <Bars3Icon className="h-5 w-5 stroke-[2]" />
                                 </button>
                             ) : (
-                                <button onClick={() => {setNavBarOpen(false); playClick();}} className="flex items-center px-3 py-2 text-black hover:text-[#4A3A3A]">
+                                <button onClick={() => {setNavBarOpen(false); playClick();}} className="flex items-center px-3 py-2 text-black hover:text-[#716767]">
                                     <XMarkIcon className="h-5 w-5 stroke-[2.5]" />
                                 </button>
                             )
@@ -72,4 +72,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar
+export default NavBar;

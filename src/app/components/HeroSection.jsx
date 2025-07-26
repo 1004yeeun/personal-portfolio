@@ -44,12 +44,12 @@ const HeroSection = () => {
                 </span>
             </div>
             <div className="pt-4 text-center">
-                <button className="px-6 py-3 w-full sm:w-fit font-bold rounded-full mt-4 mr-4 bg-gradient-to-br from-gray-400 via-black to-gray-400 hover:bg-gradient-to-br hover:from-gray-100 hover:via-gray-300 hover:to-gray-200 text-white hover:text-black">View My Projects
+                <button className="px-6 py-3 w-full sm:w-fit font-bold rounded-full mt-4 mr-4 bg-gradient-to-br from-gray-600 via-black to-gray-600 hover:bg-gradient-to-br hover:from-[#F0EDE9] hover:via-[#E6E1DD] hover:to-[#F0EDE9] text-white hover:text-black">View My Projects
                     <span className="block hover:text-black text-white rounded-full"></span>
                 </button>
 
-                <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full mt-4 bg-gradient-to-br from-gray-400 via-black to-gray-400 text-black border border-white">
-                    <span className="block bg-white rounded-full px-5 py-2 hover:bg-gradient-to-br hover:from-gray-100 hover:via-gray-300 hover:to-gray-200">Contact Me!</span>
+                <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full mt-4 bg-gradient-to-br from-gray-600 via-black to-gray-600 text-black border border-[#DCD7D3]">
+                    <span className="block bg-[#E6E1DD] rounded-full px-5 py-2 hover:bg-gradient-to-br hover:from-[#F0EDE9] hover:via-[#E6E1DD] hover:to-[#F0EDE9]">Contact Me!</span>
                 </button>
             </div>
         </section>

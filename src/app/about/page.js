@@ -9,7 +9,9 @@ export default function AboutPage() {
             <div className="container mx-auto px-7 py-25 sm:py-25">
                 <AboutSection />
             </div>
-            <ProjectSection />
-        </main>
+            <div className="mx-auto px-7 py-25 sm:py-25">
+                <ProjectSection />
+            </div>
+        </main >
     );
 };

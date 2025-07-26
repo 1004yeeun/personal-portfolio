@@ -17,8 +17,8 @@ const AboutSection = () => {
                     alt="Joyce Jeoung"
                     decoding="async"
                     data-nimg="fill"
-                    className=""
-                    width={500}
+                    className="mx-auto sm:w-300 sm:h-100 md:py-10"
+                    width={400}
                     height={400}
                 />
                 <div className="text-black">

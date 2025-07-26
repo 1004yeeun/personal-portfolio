@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import localFont from 'next/font/local';
 import useClickSound from "../hooks/useClickSound"; 
+import Link from 'next/link';
 
 const satoshi = localFont({
     src: '../../../public/fonts/Satoshi-Variable.ttf',
@@ -47,12 +48,15 @@ const HeroSection = () => {
                 </span>
             </div>
             <div className="pt-4 text-center">
-                <button onClick={() => {playClick();}} className="px-6 py-3 w-full sm:w-fit font-bold rounded-full mt-4 mr-4 bg-gradient-to-br from-gray-600 via-black to-gray-600 hover:bg-gradient-to-br hover:from-[#F0EDE9] hover:via-[#E6E1DD] hover:to-[#F0EDE9] text-white hover:text-black">View My Projects
+                <Link href="/projects"><button onClick={() => {playClick();}} className="px-6 py-3 w-full sm:w-fit font-bold rounded-full mt-4 mr-4 bg-gradient-to-br from-gray-600 via-black to-gray-600 hover:bg-gradient-to-br hover:from-[#F0EDE9] hover:via-[#E6E1DD] hover:to-[#F0EDE9] text-white hover:text-black">View My Projects
                     <span className="block hover:text-black text-white rounded-full"></span>
                 </button>
+                </Link>
+                <Link href="/contact">
                 <button onClick={() => {playClick();}} className="px-1 py-1 w-full sm:w-fit font-bold rounded-full mt-4 bg-gradient-to-br from-gray-600 via-black to-gray-600 text-black border border-[#DCD7D3]">
                     <span className="block bg-[#E6E1DD] rounded-full px-5 py-2 hover:bg-gradient-to-br hover:from-[#F0EDE9] hover:via-[#E6E1DD] hover:to-[#F0EDE9]">Contact Me!</span>
                 </button>
+                </Link>
             </div>
         </section>
     );

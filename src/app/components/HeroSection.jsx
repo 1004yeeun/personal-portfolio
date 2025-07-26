@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import localFont from 'next/font/local';
+import useClickSound from "../hooks/useClickSound"; 
 
 const satoshi = localFont({
     src: '../../../public/fonts/Satoshi-Variable.ttf',
@@ -11,6 +12,8 @@ const satoshi = localFont({
 });
 
 const HeroSection = () => {
+    const playClick = useClickSound();
+
     return (
         <section className={satoshi.className}>
             <div className="max-w-4xl mx-auto mt-5 flex flex-col items-center text-center">
@@ -44,11 +47,10 @@ const HeroSection = () => {
                 </span>
             </div>
             <div className="pt-4 text-center">
-                <button className="px-6 py-3 w-full sm:w-fit font-bold rounded-full mt-4 mr-4 bg-gradient-to-br from-gray-600 via-black to-gray-600 hover:bg-gradient-to-br hover:from-[#F0EDE9] hover:via-[#E6E1DD] hover:to-[#F0EDE9] text-white hover:text-black">View My Projects
+                <button onClick={() => {playClick();}} className="px-6 py-3 w-full sm:w-fit font-bold rounded-full mt-4 mr-4 bg-gradient-to-br from-gray-600 via-black to-gray-600 hover:bg-gradient-to-br hover:from-[#F0EDE9] hover:via-[#E6E1DD] hover:to-[#F0EDE9] text-white hover:text-black">View My Projects
                     <span className="block hover:text-black text-white rounded-full"></span>
                 </button>
-
-                <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full mt-4 bg-gradient-to-br from-gray-600 via-black to-gray-600 text-black border border-[#DCD7D3]">
+                <button onClick={() => {playClick();}} className="px-1 py-1 w-full sm:w-fit font-bold rounded-full mt-4 bg-gradient-to-br from-gray-600 via-black to-gray-600 text-black border border-[#DCD7D3]">
                     <span className="block bg-[#E6E1DD] rounded-full px-5 py-2 hover:bg-gradient-to-br hover:from-[#F0EDE9] hover:via-[#E6E1DD] hover:to-[#F0EDE9]">Contact Me!</span>
                 </button>
             </div>

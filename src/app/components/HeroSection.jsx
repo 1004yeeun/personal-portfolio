@@ -67,7 +67,7 @@ const HeroSection = () => {
                     rel="noopener noreferrer"
                     className="text-2xl text-black hover:text-[#716767] transition"
                 >
-                    <FaGithub />
+                    <FaGithub onClick={() => {playClick();}} />
                 </a>
 
                 <a
@@ -76,14 +76,14 @@ const HeroSection = () => {
                     rel="noopener noreferrer"
                     className="text-2xl text-black hover:text-[#716767] transition"
                 >
-                    <FaLinkedin />
+                    <FaLinkedin onClick={() => {playClick();}} />
                 </a>
 
                 <a
                     href="mailto:joycejeoung@ucla.edu"
                     className="text-2xl text-black hover:text-[#716767] transition"
                 >
-                    <FaEnvelope />
+                    <FaEnvelope onClick={() => {playClick();}} />
                 </a>
             </div>
         </section>

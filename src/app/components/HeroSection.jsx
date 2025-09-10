@@ -65,7 +65,7 @@ const HeroSection = () => {
                     href="https://github.com/1004yeeun"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl text-gray-700 hover:text-[#716767] transition"
+                    className="text-2xl text-black hover:text-[#716767] transition"
                 >
                     <FaGithub />
                 </a>
@@ -74,14 +74,14 @@ const HeroSection = () => {
                     href="https://linkedin.com/in/joycejeoung"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl text-blue-950 hover:text-[#716767] transition"
+                    className="text-2xl text-black hover:text-[#716767] transition"
                 >
                     <FaLinkedin />
                 </a>
 
                 <a
                     href="mailto:joycejeoung@ucla.edu"
-                    className="text-2xl text-red-950 hover:text-[#716767] transition"
+                    className="text-2xl text-black hover:text-[#716767] transition"
                 >
                     <FaEnvelope />
                 </a>

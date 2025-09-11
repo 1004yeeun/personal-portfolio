@@ -11,6 +11,7 @@ const ProjectSection = () => {
                 image="/images/foodie-fam-image.png"
                 tech={["React", "Node.js", "Express", "MongoDB Atlas (NoSQL)", "Git/GitHub"]}
                 skill={["Full-Stack", "Backend Dev", "Authentication/Secure Login", "Rest API", "Leadership", "Team Collaboration", "Communication", "Version Control"]}
+                github="https://github.com/dkmrn/foodie-fam"
             />
             
             <Project
@@ -19,6 +20,7 @@ const ProjectSection = () => {
                 image="/images/marble-madness-image.png"
                 tech={["C++"]}
                 skill={["Object-Oriented Programming", "Inheritance", "Polymorphism", "Memory Management", "Debugging", "Optimization"]}
+                github="https://github.com/1004yeeun/marble-madness"
             />
 
             <Project
@@ -27,14 +29,16 @@ const ProjectSection = () => {
                 image="/images/slice-image.png"
                 tech={["Firebase", "PyTorch", "TypeScript", "FFmpeg.js", "React", "Node.js"]}
                 skill={["Browser-based Video Processing", "Frontend Performance Optimization", "In-browser File Handling"]}
+                github="https://github.com/1004yeeun/slice"
             />
 
             <Project
-                name="Phichi.com"
-                description="PhiChi.com is a digital home base for UCLA's pre-med students seeking mentorship, leadership, and community. When the Phi Chi Professional Pre-Medical Society first launched its chapter, there was no digital infrastructure - no online presence, no member system, no place for students to find support. I took initiative to build the organization's website from the ground up, transforming a blank canvas into a responsive, content-rich hub that continues to grow with the chapter."
+                name="Uclaphichi.com"
+                description="UclaPhiChi.com is a digital home base for UCLA's pre-med students seeking mentorship, leadership, and community. When the Phi Chi Professional Pre-Medical Society first launched its chapter, there was no digital infrastructure - no online presence, no member system, no place for students to find support. I took initiative to build the organization's website from the ground up, transforming a blank canvas into a responsive, content-rich hub that continues to grow with the chapter."
                 image="/images/phichi-image.png"
                 tech={["HTML/CSS", "WordPress"]}
                 skill={["UI/UX", "Web Dev", "Content Management Systems", "User-centered Design", "Technical Initiative"]}
+                link="https://uclaphichi.com"
             />
 
             <Project
@@ -43,6 +47,8 @@ const ProjectSection = () => {
                 image="/images/personal-portfolio-image.png"
                 tech={["React", "Next.js", "Tailwind CSS"]}
                 skill={["UI/UX", "Personal Branding", "Frontend Dev", "Reusable Component Design", "Organization"]}
+                github="https://github.com/1004yeeun/personal-portfolio"
+                link="https://joycejeoung.com"
             />
         </div>
     );

@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { BiWorld } from 'react-icons/bi';
 
-export default function Project({ name, description, image, tech = [], skill = [] }) {
+export default function Project({ name, description, image, tech = [], skill = [], github, link }) {
     return (
         <div className="rounded-2xl shadow-md p-4 bg-white hover:shadow-xl transition">
             <div className="flex flex-col items-center md:flex-row md:items-center gap-3">
@@ -9,7 +10,7 @@ export default function Project({ name, description, image, tech = [], skill = [
                     <h2 className="text-xl font-semibold mb-1 text-black">{name}</h2>
                     <p className="text-black">{description}</p>
 
-                    <div className="flex flex-wrap gap-1 mb-1 pt-4">
+                    <div className="flex flex-wrap gap-1 sm:mb-2 mb-1 pt-3">
                         {tech.map((t, i) => (
                             <span
                                 key={i}
@@ -26,6 +27,29 @@ export default function Project({ name, description, image, tech = [], skill = [
                                 {s}
                             </span>
                         ))}
+                    </div>
+
+                    <div className="flex gap-4 pt-2">
+                        {github && (
+                            <a
+                                href={github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1.5 text-sm text-[#c7c4c0] hover:text-black transition"
+                            >
+                                <FaGithub /> <span className="block sm:hidden">source code</span>
+                            </a>
+                        )}
+                        {link && (
+                            <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1.5 text-sm text-[#c7c4c0] hover:text-black transition"
+                            >
+                                <BiWorld /> <span className="block sm:hidden">live demo</span>
+                            </a>
+                        )}
                     </div>
                 </div>
                 <div className="md:ml-2 shrink-0">

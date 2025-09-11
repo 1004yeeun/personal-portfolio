@@ -41,7 +41,7 @@ export default function Project({ name, description, image, tech = [], skill = [
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-1.5 text-sm text-[#c7c4c0] hover:text-black transition"
                             >
-                                <FaGithub onClick={() => {playClick();}} /> <span className="block sm:hidden">source code</span>
+                                <FaGithub onClick={() => {playClick();}} /> <span className="hidden md:block lg:block">source code</span>
                             </a>
                         )}
                         {link && (
@@ -51,7 +51,7 @@ export default function Project({ name, description, image, tech = [], skill = [
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-1.5 text-sm text-[#c7c4c0] hover:text-black transition"
                             >
-                                <BiWorld onClick={() => {playClick();}} /> <span className="block sm:hidden">live demo</span>
+                                <BiWorld onClick={() => {playClick();}} /> <span className="hidden md:block lg:block">live demo</span>
                             </a>
                         )}
                     </div>

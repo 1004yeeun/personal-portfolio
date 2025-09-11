@@ -1,8 +1,12 @@
+"use client";
 import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa';
 import { BiWorld } from 'react-icons/bi';
+import useClickSound from '../hooks/useClickSound'; 
 
 export default function Project({ name, description, image, tech = [], skill = [], github, link }) {
+    const playClick = useClickSound();
+    
     return (
         <div className="rounded-2xl shadow-md p-4 bg-white hover:shadow-xl transition">
             <div className="flex flex-col items-center md:flex-row md:items-center gap-3">
@@ -37,7 +41,7 @@ export default function Project({ name, description, image, tech = [], skill = [
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-1.5 text-sm text-[#c7c4c0] hover:text-black transition"
                             >
-                                <FaGithub /> <span className="block sm:hidden">source code</span>
+                                <FaGithub onClick={() => {playClick();}} /> <span className="block sm:hidden">source code</span>
                             </a>
                         )}
                         {link && (
@@ -47,7 +51,7 @@ export default function Project({ name, description, image, tech = [], skill = [
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-1.5 text-sm text-[#c7c4c0] hover:text-black transition"
                             >
-                                <BiWorld /> <span className="block sm:hidden">live demo</span>
+                                <BiWorld onClick={() => {playClick();}} /> <span className="block sm:hidden">live demo</span>
                             </a>
                         )}
                     </div>

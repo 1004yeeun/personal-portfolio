@@ -1,5 +1,6 @@
 import NavBar from '../components/NavBar'
 import ProjectSection from '../components/ProjectSection'
+import Footer from '../components/Footer'
 
 export default function ProjectsPage() {
     return (
@@ -8,6 +9,8 @@ export default function ProjectsPage() {
             <div className="mx-auto px-7 py-15">
                 <ProjectSection />
             </div>
+
+            <Footer />
         </main>
     );
 };

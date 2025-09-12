@@ -63,7 +63,7 @@ export default function ContactPage() {
                     Let&apos;s connect! I&apos;m always open to opportunities in software engineering, collaboration on projects, or just to chat about tech or linguistics!
                 </h2>
 
-                <form onSubmit={onSubmit} className="space-y-4" aria-busy={status==="loading"}>
+                <form onSubmit={onSubmit} className="space-y-4 text-black pb-5" aria-busy={status==="loading"}>
                     <div className="hidden">
                         <label htmlFor="website">Website</label>
                         <input
@@ -80,7 +80,7 @@ export default function ContactPage() {
                     <input name="name" placeholder="Your name" required className="w-full rounded border p-2" />
                     <input name="email" type="email" placeholder="you@example.com" required className="w-full rounded border p-2" />
                     <textarea name="message" rows={5} placeholder="How can I help?" required className="w-full rounded border p-2" />
-                    <button disabled={status==="loading"} className="rounded bg-black px-4 py-2 text-white disabled:opacity-50">
+                    <button disabled={status==="loading"} className="rounded bg-black px-4 py-2 text-white disabled:opacity-50 hover:bg-[#93908c] transition font-bold">
                         {status==="loading" ? "Sending..." : "Send"}
                     </button>
 
@@ -91,13 +91,13 @@ export default function ContactPage() {
                 </form>
 
                 <div className="flex justify-center gap-6 mb-8 text-3xl">
-                    <a href="mailto:joycejeoung@ucla.edu" className="text-blue-600 hover:underline">
+                    <a href="mailto:joycejeoung@ucla.edu" className="text-black hover:text-[#93908c] transition">
                         <FaEnvelope />
                     </a>
-                    <a href="https://www.linkedin.com/in/joycejeoung" target="_blank" className="hover:text-blue-600">
+                    <a href="https://www.linkedin.com/in/joycejeoung" target="_blank" className="text-black hover:text-[#93908c] transition">
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com/1004yeeun" target="_blank" className="hover:text-black">
+                    <a href="https://github.com/1004yeeun" target="_blank" className="text-black hover:text-[#93908c] transition">
                         <FaGithub />
                     </a>
                 </div>

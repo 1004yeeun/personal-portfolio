@@ -91,14 +91,14 @@ export default function ContactPage() {
                 </form>
 
                 <div className="flex justify-center gap-6 mb-8 text-3xl">
-                    <a href="mailto:joycejeoung@ucla.edu" className="text-black hover:text-[#93908c] transition">
-                        <FaEnvelope />
+                <a href="https://github.com/1004yeeun" target="_blank" className="text-black hover:text-[#93908c] transition">
+                        <FaGithub />
                     </a>
                     <a href="https://www.linkedin.com/in/joycejeoung" target="_blank" className="text-black hover:text-[#93908c] transition">
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com/1004yeeun" target="_blank" className="text-black hover:text-[#93908c] transition">
-                        <FaGithub />
+                    <a href="mailto:joycejeoung@ucla.edu" className="text-black hover:text-[#93908c] transition">
+                        <FaEnvelope />
                     </a>
                 </div>
             </section>

@@ -54,12 +54,12 @@ export default function ContactPage() {
         <main className="flex min-h-screen flex-col bg-[#DCD7D3]">
             <NavBar />
 
-            <section className="max-w-3xl mx-auto py-12 pt-30 md:pt-25 text-center">
+            <section className="max-w-3xl mx-auto py-12 pt-30 md:pt-25 text-center pl-10 pr-10">
                 <h1 className="text-3xl font-bold mb-4 text-black">Contact Me</h1>
                 <p className="text-gray-700">
                     I&apos;m a UCLA senior in Computer Science, Linguistics, and Cognitive Science who builds full-stack products with care for UI and real users. My projects span web apps, NLP tools, and game design. I&apos;ve worked as an interpreter at K-pop concerts and Korean business conventions, which sharpened my ability to communicate clearly in high-pressure settings — a skill I bring to every engineering project. I&apos;m reliable, fast to learn, and focused on growing as a software engineer who ships reliable, impactful solutions.
                 </p>
-                <h2 className="text-black mb-6 font-extrabold">
+                <h2 className="text-black mb-6 font-extrabold pt-3">
                     Let&apos;s connect! I&apos;m always open to opportunities in software engineering, collaboration on projects, or just to chat about tech or linguistics!
                 </h2>
 

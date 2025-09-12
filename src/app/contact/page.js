@@ -1,9 +1,20 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import localFont from 'next/font/local';
+import useSendSound from '../hooks/useSendSound';
+
+const satoshi = localFont({
+    src: '../../../public/fonts/Satoshi-Variable.ttf',
+    variable: '--font-satoshi',
+    display: 'swap',
+});
 
 export default function ContactPage() {
+    const playSend = useSendSound();
+
     const [status, setStatus] = useState("idle");
     const [errorMsg, setErrorMsg] = useState("");
     const [renderTs, setRenderTs] = useState("");
@@ -38,6 +49,7 @@ export default function ContactPage() {
                 form.reset();
                 setRenderTs(String(Date.now()));
                 setStatus("ok");
+                playSend();
             } else {
                 setStatus("err");
                 setErrorMsg(json?.error || "Something went wrong.");
@@ -51,6 +63,7 @@ export default function ContactPage() {
     }
 
     return (
+        <div className={satoshi.className}>
         <main className="flex min-h-screen flex-col bg-[#DCD7D3]">
             <NavBar />
 
@@ -77,9 +90,9 @@ export default function ContactPage() {
 
                     <input type="hidden" name="ts" value={renderTs} readOnly />
 
-                    <input name="name" placeholder="Your name" required className="w-full rounded border p-2" />
+                    <input name="name" placeholder="enter your name (required)" required className="w-full rounded border p-2" />
                     <input name="email" type="email" placeholder="you@example.com" required className="w-full rounded border p-2" />
-                    <textarea name="message" rows={5} placeholder="How can I help?" required className="w-full rounded border p-2" />
+                    <textarea name="message" rows={5} placeholder="send me a message here... or to joycejeoung@ucla.edu" required className="w-full rounded border p-2" />
                     <button disabled={status==="loading"} className="rounded bg-black px-4 py-2 text-white disabled:opacity-50 hover:bg-[#93908c] transition font-bold">
                         {status==="loading" ? "Sending..." : "Send"}
                     </button>
@@ -90,18 +103,9 @@ export default function ContactPage() {
                     </div>
                 </form>
 
-                <div className="flex justify-center gap-6 mb-8 text-3xl">
-                <a href="https://github.com/1004yeeun" target="_blank" className="text-black hover:text-[#93908c] transition">
-                        <FaGithub />
-                    </a>
-                    <a href="https://www.linkedin.com/in/joycejeoung" target="_blank" className="text-black hover:text-[#93908c] transition">
-                        <FaLinkedin />
-                    </a>
-                    <a href="mailto:joycejeoung@ucla.edu" className="text-black hover:text-[#93908c] transition">
-                        <FaEnvelope />
-                    </a>
-                </div>
+                <Footer />
             </section>
         </main>
+        </div>
     );
 };

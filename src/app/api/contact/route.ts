@@ -17,6 +17,13 @@ const WINDOW_MS = 60_000;
 const LIMIT = 5;
 
 export async function POST(req: Request) {
+    const key = process.env.RESEND_API_KEY;
+    if (!key) {
+        console.error("RESEND_API_KEY missing");
+        return NextResponse.json({ ok: false, error: "Server not configured" }, { status: 500 });
+    }
+    const resend = new Resend(key);
+    
     try {
         const ip = req.headers.get("x-forwarded-for")?.split(",")[0].trim() || req.headers.get("x-real-ip") || "unknown-i[";
         const now = Date.now()

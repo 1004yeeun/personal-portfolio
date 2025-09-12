@@ -20,10 +20,12 @@ const navLinks = [
         title: "My Projects",
         path: "projects",
     },
+    /* commented out until implemented $$$
     {
         title: "A Foodie's Blog",
         path: "foodie",
     }
+    */
 ]
 
 const satoshi = localFont({

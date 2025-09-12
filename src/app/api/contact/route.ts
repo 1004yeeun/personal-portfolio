@@ -2,8 +2,6 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const Payload = z.object({
     name: z.string().min(1).max(100),
     email: z.string().email().max(200),
@@ -19,7 +17,7 @@ const LIMIT = 5;
 export async function POST(req: Request) {
     try {
         const fwd = req.headers.get("x-forwarded-for") ?? "";
-        const ip = fwd.split(".")[0]?.trim() || req.headers.get("x-real-ip") || "unknown-ip";
+        const ip = fwd.split(",")[0]?.trim() || req.headers.get("x-real-ip") || "unknown-ip";
         
         const now = Date.now()
         const entry = hits.get(ip) ?? { count: 0, ts: now };

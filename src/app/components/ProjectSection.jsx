@@ -2,9 +2,7 @@ import Project from './Project';
 
 const ProjectSection = () => {
     return (
-        <div className="max-w-6xl mx-auto px-6 py-11 grid gap-5">
-            <h1 className="text-center font-extrabold text-black text-3xl pb-5">My Projects</h1>
-
+        <div className="max-w-6xl mx-auto px-6 grid gap-5 my-5">
             <Project
                 name="FoodieFam"
                 description="FoodieFam is a web app built atop a MERN stack that aims to connect people to share a meal with. Have you ever wanted to try multiple dishes from a restaurant while on a solo mission? Use Foodie Fam to find others to share a meal family style!"

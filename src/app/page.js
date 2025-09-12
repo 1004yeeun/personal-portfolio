@@ -8,6 +8,13 @@ import NavBar from './components/NavBar';
 import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
 import useTransitionSound from './hooks/useTransitionSound';
+import localFont from 'next/font/local';
+
+const satoshi = localFont({
+    src: '../../public/fonts/Satoshi-Variable.ttf',
+    variable: '--font-satoshi',
+    display: 'swap',
+});
 
 export default function Home() {
   const playTransition = useTransitionSound();
@@ -34,10 +41,10 @@ export default function Home() {
       <MyHead title="Joyce Jeoung Portfolio Home" description="Hi! Learn more about Joyce Jeoung." />
       <main className="flex min-h-screen flex-col bg-[#DCD7D3]">
         <NavBar />
-        <div className="container mx-auto px-7 py-30 sm:py-30">
+        <div className="container mx-auto px-15 py-30 sm:py-30">
           <HeroSection />
         </div>
-        <hr className="mb-25 border-t-2 mx-5 border-black" />
+        <hr className="mt-0 mb-20 h-0.5 mx-10 md:mx-18 lg:mx-30 border-0 bg-[#c1bab4]" />
         <div className="px-10 md:px-20">
           <AboutSection />
         </div>

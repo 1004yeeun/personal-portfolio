@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex min-h-screen flex-col bg-[#DCD7D3]">
+      <main className="flex min-h-screen flex-col bg-[#DCD7D3] pt-[calc(64px+env(safe-area-inset-top))]">
         <NavBar />
         <div className="container mx-auto px-15 py-30 sm:py-30">
           <HeroSection />

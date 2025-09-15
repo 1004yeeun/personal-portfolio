@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  viewport: 'width=device-width, initial-scale-1, viewport-fit=cover',
   title: "Joyce Jeoung | CS + Linguistics + Cognitive Science @ UCLA",
   description: "Hi! I'm Joyce Jeoung, studying Computer Science at UCLA. Go Bruins! I'm passionate about building tools that bring people closer together through technology.",
   icons: { 

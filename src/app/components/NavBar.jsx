@@ -40,7 +40,7 @@ const NavBar = () => {
 
     return (
         <main className={satoshi.className}>
-            <nav className="fixed top-0 inset-x-0 left-0 right-0 z-50 bg-[#E6E1DD]/98 backdrop-blur-md" style={{ paddingTop: 'env(safe-area-inset-top, 0px )', }}>
+            <nav className="fixed top-0 inset-x-0 left-0 right-0 z-50 bg-[#E6E1DD]/98 backdrop-blur-md" style={{ paddingTop: 'env(safe-area-inset-top, 0px)', }}>
                 <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-4 sm:py-2" >
                     <Link onClick={playClick} href={"/"} className="text-xl text-black font-semibold font-sans hover:text-[#716767]">JOYCE JEOUNG</Link>
                     <div className="mobile-menu block md:hidden">

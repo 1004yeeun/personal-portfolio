@@ -38,7 +38,6 @@ export default function Home() {
 
   return (
     <>
-      <MyHead title="Joyce Jeoung Portfolio Home" description="Hi! Learn more about Joyce Jeoung." />
       <main className="flex min-h-screen flex-col bg-[#DCD7D3]">
         <NavBar />
         <div className="container mx-auto px-15 py-30 sm:py-30">

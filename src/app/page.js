@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import Image from 'next/image';
 import HeroSection from './components/HeroSection';
-import MyHead from './components/MyHead';
 import NavBar from './components/NavBar';
 import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
